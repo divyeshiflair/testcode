@@ -1,0 +1,52 @@
+function _G91(_yz, _zz) {
+
+function _g91(_tA) {
+
+function _t2(_55, _65) {
+
+function _i5(_yz, _zz, _QA) {
+
+ 
+function _t2(_55, _65) {
+    {
+         
+        _55._G6 = _i5(_55._s1,
+            _55._t1, 12);
+            alert( _55._G6);
+        _a5(_55._G6)._j5(_55._H6);
+        
+    };
+}
+
+
+function _C2(_55, _65) {
+count
+//1,2,3,4,5,6,7,8,9,10,11,12
+}
+
+
+line # : 3179 :
+SEt score to zero (0)
+global._o4 = 0;
+
+
+Line # :3608
+global._p4 += 1;
+For grand total score
+
+
+
+line # 3753
+Game over function
+function __2(_55, _65) {
+    {
+}
+-- 
+
+Thanks & Regards,
+
+ 
+
+Divyesh Patoriya
+
+iFlair Web Technologies Pvt. Ltd. 
