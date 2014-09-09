@@ -4,7 +4,6 @@ include_once("../config.php");
 <!DOCTYPE html>
 <html lang="en">
     <head>
-         
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="pragma" content="no-cache"/>
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -17,13 +16,7 @@ include_once("../config.php");
 
         <!-- Set the background colour of the document -->
         <style>
-            body {
-              background: #222;
-              color:#cccccc;
-              margin: 0px;
-              padding: 0px;
-              border: 0px;
-            }
+            
             canvas {
                       image-rendering: optimizeSpeed;
                       -webkit-interpolation-mode: nearest-neighbor;
@@ -75,9 +68,8 @@ include_once("../config.php");
             }
         </style>
     </head>
-
     <body>
-     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
         <div class="gm4html5_div_class" id="gm4html5_div_id">
         <img src="SAM/splash.png" id="GM4HTML5_loadingscreen" alt="smilegames:HTML5 loading screen" style="display:none;"/>
             <!-- Create the canvas element the game draws to -->
@@ -87,5 +79,12 @@ include_once("../config.php");
         </div>
         <!-- Run the game code -->
         <script type="text/javascript" src="SAM/tetris_131025_1700(C4).js?WZVXB=1860920073"></script>
-    </body>
-</html>
+		</body>
+</html> 
+ <script>
+		$(document).ready(function(){
+		  $("#replay").live('click',function(){
+			  location.reload();
+		});
+});
+</script>

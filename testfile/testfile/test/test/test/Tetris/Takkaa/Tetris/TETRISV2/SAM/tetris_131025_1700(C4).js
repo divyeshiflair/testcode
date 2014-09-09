@@ -3609,12 +3609,12 @@ function _C2(_55, _65) {
       
         
     };
-    
+    // alert(global._m4); This for level
     if(global._p4 % 12 ==0){
 		$.ajax({		   
 		   type: "POST",
 		   url: "../TETRISV2/save_score.php",
-		   data: "action_type=saves&current_score="+global._p4+"&user_id=1",
+		   data: "action_type=saves&current_score="+global._p4+"&level="+global._m4+"&user_id=1",
 		   success: function(msg){
 			if(msg != "")
 			{
@@ -3677,6 +3677,7 @@ function _L2(_55, _65) {
 function _M2(_55, _65) {
     {
         _G5(_55);
+        
     };
 }
 
@@ -3685,13 +3686,16 @@ function _N2(_55, _65) {
         _n5(_55, "__alarm__", 9, (_e6._h6 * 12));
         _55._N6 = _55._s1;
         _55._O6 = _55._t1;
+        
     };
+    insert_Rec();
 }
 
 function _O2(_55, _65) {
     {
         _55._J6 = 270;
         _55._K6 = 0.1;
+        
     };
 }
 
@@ -3702,12 +3706,16 @@ function _Q2(_55, _65) {
         _n5(_55, "__alarm__", 9, (_e6._h6 * 20));
         _55._B6(0);
         _55._K6 = 0;
+        
+        
     };
 }
 
 function _R2(_55, _65) {
     {
         _55._B6(0);
+        
+        
     };
 }
 
@@ -3755,9 +3763,9 @@ function __2(_55, _65) {
         _55._z6(3);
         _55._d5(-_55._R6());
         _55._e5((_e6._S6 - 100));
-		//$(".gm4html5_div_class").load("../TETRISV2/game_over.php");
-		//window.location.href = "game_over.php"
+		$("#gm4html5_div_id").load("../TETRISV2/game_over.php"); 	
     };
+     
 }
 
 function _03(_55,
@@ -34538,3 +34546,18 @@ function callme()
 	   }	
 	 });
 }
+function insert_Rec()
+{
+	
+		$.ajax({		   
+		   type: "POST",
+		   url: "../TETRISV2/save_score.php",
+		   data: "action_type=insert_rec",
+		   success: function(msg){
+			if(msg != "")
+			{
+					
+			}
+		   }	
+		 });
+	 }
