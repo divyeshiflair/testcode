@@ -1,0 +1,25 @@
+#AuthName "Net-Effect"
+#require valid-user
+
+RewriteEngine on
+
+Options All -Indexes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
+
+
+RewriteRule ^([^/]*)/([^/]*) ?%{QUERY_STRING}&files=index.php&var11=$1&var2=$2	
+
+
+#RewriteRule ([^/]*)/([^/]*)$ index.php?files=index.php&var11=$1&var2=$2	
+
+#RewriteRule ^ashish/([^/]*)$ index.php?files=index.php&var1=$1	
+
+#RewriteRule ([^/]*)/([^/]*) index\.php?files=index.php&var1=$1&var2=$2 [L]
+#RewriteRule ([^/]*)/([^/]*)/([^/]*)$ index.php?files=index.php&var1=$1&var2=$2 [L]
+
+
+#RewriteRule ^en/contact/([^/]*)$ index.php?files=thank-you&cat_name=$1
