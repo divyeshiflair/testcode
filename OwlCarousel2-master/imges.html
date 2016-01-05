@@ -1,0 +1,30 @@
+
+<link rel="stylesheet" href="http://192.168.1.207/iflair_test/OwlCarousel2-master/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="http://192.168.1.207/iflair_test/OwlCarousel2-master/dist/assets/owl.theme.default.min.css">
+<script src="http://192.168.1.207/iflair_test/OwlCarousel2-master/dist/jquery.min.js"></script>
+<script src="http://192.168.1.207/iflair_test/OwlCarousel2-master/dist/owl.carousel.js"></script>
+
+<div class="owl-carousel owl-theme">
+	<div class="item-video" data-merge="1"><img style="height:100px;" src="http://192.168.1.207/iflair_test/OwlCarousel2-master/docs_src/assets/img/feature-drag.png"/></div>
+	<div class="item-video" data-merge="1"><img style="height:100px;;" src="http://192.168.1.207/iflair_test/OwlCarousel2-master/docs_src/assets/img/feature-modern.png"/></div>
+	<div class="item-video" data-merge="1"><img style="height:100px;;"  src="http://192.168.1.207/iflair_test/OwlCarousel2-master/docs_src/assets/img/feature-drag.png"/></div>
+	<div class="item-video" data-merge="1"><img style="height:100px;;" src="http://192.168.1.207/iflair_test/OwlCarousel2-master/docs_src/assets/img/feature-zombie.png"/></div>
+	<div class="item-video" data-merge="1"><img style="height:100px;;"  src="http://192.168.1.207/iflair_test/OwlCarousel2-master/docs_src/assets/img/owl-logo.png"/></div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+		items:1,
+		merge:true,
+		loop:true,
+		margin:10,
+		video:true,
+		 merge:false,
+		lazyLoad:true,
+		center:false,
+		
+	})
+})
+</script>
