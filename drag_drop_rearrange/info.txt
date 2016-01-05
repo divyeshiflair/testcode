@@ -1,0 +1,3 @@
+-Re arrange the news using database order
+-Drag and drop the news for change the position.
+
